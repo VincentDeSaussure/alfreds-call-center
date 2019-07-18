@@ -9,7 +9,7 @@ class HeroController {
 
     data class Hello(val message: String)
 
-    @GetMapping("/hello")
+    @GetMapping("/hero")
     fun hello(): ResponseEntity<*> {
         return ResponseEntity.ok(
                 Hello(message = "message")
